@@ -13,7 +13,7 @@ namespace NumberToWord
             string input = Console.ReadLine();
             int n;
             bool isNumeric = int.TryParse(input, out n);
-            if (isNumeric && n >= 0)
+            if (isNumeric && n >= 0 && n<999999999)
                 Console.WriteLine(NumberToWords(n));
             else
                 Console.WriteLine("Please enter valid number...");
